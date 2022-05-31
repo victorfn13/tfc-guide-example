@@ -9,7 +9,16 @@ terraform {
       source  = "hashicorp/random"
       version = "3.0.0"
     }
+    
+     hyperv = {
+      source = "taliesins/hyperv"
+      version = "1.0.3"
+    }
   }
 
   required_version = ">= 0.14.0"
+}
+
+provider "hyperv" {
+  # Configuration options
 }
